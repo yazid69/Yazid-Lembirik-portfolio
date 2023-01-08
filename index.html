@@ -1,0 +1,335 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Yazid</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="#1">Accueil</a></li>
+              <li><a href="#2">CV</a></li>
+              <li><a href="#3">Mes Hobbies</a></li>
+              <li><a href="#4">Mes Projets</a></li>
+              <li><a href="#5">Contact</a></li>
+          </ul>
+          <h1 class="logo">YL</h1>
+      </div>
+  </nav>
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container" id="1">
+        <h1 class="main-title" id="#1">Bienvenue sur mon portfolio</h1>
+        <p>Je suis un étudiant de 3ème année</p>
+
+        <style>
+          
+          .wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .button {
+            min-width: 300px;
+            min-height: 60px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            color: #313133;
+            background: #4FD1C5;
+          background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+            border: none;
+            border-radius: 1000px;
+            box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            padding: 10px;
+            
+            }
+          
+          button::before {
+          content: '';
+            border-radius: 1000px;
+            min-width: calc(520px + 12px);
+            min-height: calc(70px + 12px);
+            border: 6px solid #000;
+            box-shadow: 0 0 60px rgba(#fff);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+          }
+          
+          .button:hover, .button:focus {
+            color: #313133;
+            transform: translateY(-6px);
+          }
+          
+          button:hover::before, button:focus::before {
+            opacity: 1;
+          }
+          
+          button::after {
+            content: '';
+            width: 1000px; height: 2000px;
+            border-radius: 100%;
+            border: 6px solid #ffe500;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+          }
+          
+          button:hover::after, button:focus::after {
+            animation: none;
+            display: none;
+          }
+          
+          @keyframes ring {
+            0% {
+              width: 30px;
+              height: 30px;
+              opacity: 1;
+            }
+            100% {
+              width: 300px;
+              height: 300px;
+              opacity: 0;
+            }
+          }
+          </style>
+
+        <a href="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\CV Yazid LEMBIRIK.pdf" class="button" id="1">
+          <button class="button"><span>Télécharger mon Curriculum Vitae </span></button></a>
+      </div>
+    </section>
+
+    <section id="apropos">
+      <div class="apropos-wrapper container" data-aos="fade-right" data-aos-delay="300" id="2">
+        <div class="apropos-text">
+          <p class="small">Qui suis-je ?</p>
+          <h2>Étudiant à My Digital School Lyon</h2>
+          <p>
+            Je suis un jeune de 22 ans en cours d'obtention d'un Bachelor Développement Web et Mobile travaillant en alternance chez Best Price en tant que développeur. 
+            Je suis quelqu'un de très curieux ce qui me force à toujours chercher plus de connaissances dans les domaines que j'apprécies. Je suis aussi à l'écoute ce qui me permet de travailler en équipe et je n'ai aucun problème à la diriger ou de m'intégrer.
+          </p>
+        </div>
+        <div class="apropos-img" data-aos="flip-right" data-aos-delay="500">
+          <img src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\photoyazid.jpg" alt="photoyazid" />
+        </div>
+      </div>
+    </section>
+    <section id="hobbies">
+      <h2>Mes hobbies</h2>
+      <div class="hobbies-container container" id="3">
+        <div class="hobbies-prog" data-aos="fade-up" data-aos-duration="1000">
+          <div class="img-container">
+            <img src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\laptop.jpg" alt="programmation" />
+            <div class="img-content">
+              <h3>Programmation</h3>
+
+              <button class="button is-link is-rounded" a href="https://www.linkedin.com/learning/?u=75616962">Site pour apprendre</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="hobbies-type handball">
+          <div class="img-container" data-aos="fade-up" data-aos-duration="2000">
+            <img src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\hand1.jpg" alt="hand" />
+            <div class="img-content">
+              <h3>Handball</h3>
+              <button class="button is-link is-rounded" a href="https://www.usmeyzieu-handball.fr/">Voir le site</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="hobbies-type football" data-aos="fade-up" data-aos-duration="3000">
+          <div class="img-container">
+            <img src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\football.jpg" alt="foot" />
+            <div class="img-content">
+              <h3>Football</h3>
+
+              <button class="button is-link is-rounded" a href="https://www.usvj-football.fr/">Voir le site</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projets">
+      <h2 class="Mesprojets-heading">Mes projets</h2>
+      <div class="Mesprojets-container container" id="4">
+        <div class="Mesprojets-item">
+          <div class="Mesprojets-img">
+            <a href="https://laboutiquebestprice.com/"><img src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\Group2.jpg"
+             alt="error"></a>
+          </div>
+
+
+
+          <div class="Mesprojets-description">
+
+            <h2 class="Mesprojets-titile">Best Price</h2>
+            <p>
+              Création d'un site e-commerce
+          </div>
+        </div>
+
+        <div class="Mesprojets-item">
+          <div class="Mesprojets-img">
+            <a href="https://www.mydigitalschool.com/ecole-multimedia-lyon"><img
+              src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\Ellipse 1.png"
+              alt="ca saffiche pas"
+            /></a>
+          </div>
+          <div class="Mesprojets-description">
+            <h2 class="Mesprojets-titile">Future projet N°1</h2>
+            <p>
+              My Digital Project
+          </div>
+        </div>
+        <div class="Mesprojets-item">
+          <div class="Mesprojets-img">
+            <a href="https://laboutiquebestprice.com/"><img src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\Group2.jpg" alt="pas encore fait" />
+          </div></a>
+          <div class="Mesprojets-description">
+            <h2 class="Mesprojets-titile">Future projet N°2</h2>
+            <p>
+              La construction d'un site e-commerce pour une nouvelle marque de mon entreprise.
+            </p>
+            <p class="Mesprojets-lien">lien maquette figma</p>
+          </div>
+        </div>
+        <div class="Mesprojets-item">
+          <div class="Mesprojets-img">
+            <img src="C:\dev\Mydigitalshool\portfolio\Yazid-Lembirik-portfolio\images\Group 7.png" alt="pas encore fait 2" />
+          </div>
+          <div class="Mesprojets-description">
+            <h2 class="Mesprojets-titile">Future projet N°3</h2>
+            <p>
+              Crée l'application Mobile de mon entreprise Best Price.
+            </p>
+            <p class="Mesprojets-lien">Lien Best Price</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+    
+   
+      <section id="contact0">
+        <div class="contact" id="5">
+          <div class="contact-links">
+            <h2>Me contacter</h2>
+            <div class="links">
+              <div class="link">
+                <a href="https://www.linkedin.com/in/yazid-lembirik-a0075a194/"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+              </div>
+              
+              
+              <div class="link">
+                <a href="https://www.facebook.com/yazid.lembirik.7">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form>
+              <div class="form-item">
+                <input type="text" name="sender" required>
+                <label>Nom:</label>
+              </div>
+              <div class="form-item">
+                <input type="text" name="email" required>
+                <label>Mail:</label>
+              </div>
+              <div class="form-item">
+                <textarea class="" name="message" required></textarea>
+                <label>Message:</label>
+              </div>
+              <button:not() class="submit-boutn" style="width: 110px;">Envoyer</button>  
+            </form>
+          </div>
+        </div>
+      </section>
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+  </script>
+</html>
+
+<script>
+  AOS.init();
+</script> 
+</body>
+</html>
